@@ -5,7 +5,7 @@ const uuid = require('uuid');
 const app = express();
 
 app.use(express.json());
-
+//test
 app.get('/users', async (req, res) => {
     // should return an array of users
     const rawData = await fs.readFile("./data/users.json", "utf-8");
